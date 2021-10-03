@@ -20,5 +20,5 @@ x1 <- data$sqr.foot
 x2 <- data$bedrooms
 y <- data$price
 
-multifeatured_regression = lm(formula = y ~ x1 + x2, data = data)
+multifeatured_regression <- lm(formula = y ~ x1 + x2, data = data)
 summary(multifeatured_regression)
