@@ -32,8 +32,8 @@ content <- content(data, as ="text")
 install.packages("RMySQL")
 library(DBI)
 connection <- dbConnect(RMySQL::MySQL(),
-                        dbname ="tweater",
-                        host ="courses.csrrinzqubik.us-east-1.rds.amazonaws.com",
+                        dbname = "tweater",
+                        host = "courses.csrrinzqubik.us-east-1.rds.amazonaws.com",
                         port = 3306,
                         user = "student",
                         password = "datacamp")
