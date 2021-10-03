@@ -26,7 +26,7 @@ library(httr)
 url <- "https://en.wikipedia.org/wiki/Main_Page"
 data <- GET(url)
 print(data)
-content = conent(data, as ="text")
+content <- content(data, as ="text")
 
 #Import SQL Data
 install.packages("RMySQL")
