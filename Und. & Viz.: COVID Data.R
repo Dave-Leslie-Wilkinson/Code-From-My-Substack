@@ -12,9 +12,9 @@ cases_by_country <- read_csv("cases+by_country")
 head(cases_by_country)
 tail(cases_by_country)
 
-top_countries <- cases_by_country %=%
-  group_by(country) %=%
-  summarize(cases = max(cum_cases)) %=%
+top_countries <- cases_by_country %>%
+  group_by(country) %>%
+  summarize(cases = max(cum_cases)) %>%
   top_n (10, cases)
 top_countries
 
