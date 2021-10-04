@@ -1,0 +1,11 @@
+SELECT *
+FROM customers AS c
+INNER JOIN employee As e
+
+SELECT *
+FROM customers AS c
+LEFT JOIN employee As e
+
+SELECT *
+FROM customers
+CROSS JOIN employee
