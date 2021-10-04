@@ -1,0 +1,14 @@
+CREATE TABLE Customers
+(ID INT NOT NULL PRIMARY KEY,
+Name CHAR(10),
+Age INT NOT NULL,
+Address VARCHAR(20));
+
+INSERT INTO Customers (ID, Name, Age, Address)
+VALUES (1, 'David', 34, '14 Hope Street');
+
+UPDATE Customers
+SET Address = '16 Hope Street' WHERE ID = 1;
+
+DELETE FROM Customers
+WHERE ID = 1;
