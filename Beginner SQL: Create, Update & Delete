@@ -12,3 +12,5 @@ SET Address = '16 Hope Street' WHERE ID = 1;
 
 DELETE FROM Customers
 WHERE ID = 1;
+
+DROP TABLE Customers
