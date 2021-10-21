@@ -11,19 +11,20 @@ data %>%
   filter(Code == "SA" & Comments > 1)
 
 data %>%
-  filter(Code == "SA" & Comments > 1)
-
-data %>%
   filter(Likes.and.reactions > mean(Likes.and.reactions))
 
+#Share Not 0
 data %>% 
   filter(Shares != 0)
 
+#Share Not NA
 data %>% 
   filter(Shares != NA)
 
+Code Not NA
 data %>% 
   filter(!is.na(Code))
 
+#Code Is NA
 data %>% 
   filter(is.na(Code))
