@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Population Profit Web Application</title>
+<meta name="description" content="Web Application predicting the profit made by certian population size">
+<style>
+body{font-family: Arial, Helvetica, Sans-Serif;
+    background-color: white;
+    padding: 100px 0px}
+*{box-sizing: border-box}
+.maincontainer {padding: 30px 10px;
+    background-color: #efefef;
+    width:80%;
+    border-radius: 10px;
+    margin: 0 auto;    
+    box-shadow: 0px 0px 10px 0px rgba(48,48,48,0.75);}
+input[type=text] {width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: white;
+    font-size: 18px;
+    color: #303030
+}
+input[type=text]:focus {background-color: #ddd;
+    outline:none
+}
+hr{border: 1px solid #f1f1f1;
+margin-bottom: 25px}
+.calculatebtn{background-color: #303030;
+    color: #fff;
+    padding: 15px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    font-size: 18px}
+ .calculatebtn:hover {
+    opacity: 1
+}    
+.reloadbtn {
+    width: 100%;
+    color: #303030;
+    padding: 15px 20px;
+    font-size: 18px;
+    background-color: #fff;
+    margin: 8px 0;
+    cursor: pointer;
+        border: none
+}
+.resultdiv {
+    width: 80%;
+    padding: 20px;
+    background-color: #fff;
+    margin: 0 auto;
+    border: solid 2px #303030
+}
+.answerheading {
+    color: #303030;
+    font-size: 18px
+}
+.answerspan {
+    color:#303030;
+    font-size:20px;
+   font-weight: bold
+ }    
+</style>
+</head>
+<body>
+<div class="maincontainer">
+    <div id="calculator">
+        <form>
+            <input id="x" type="text" placeholder="Population Size">
+        </form>
+            <button type="button" class="calculatebtn" id="calculate">Calculate</button>
+            <button class="reloadbtn" onclick="window.location.href='url';">Reload</button>
+            <hr>
+            <div class="resultdiv" id="resultdiv">
+            <span class="answerheading" id="resultheading">Answer:</span>
+            <hr>
+            <span class="answerspan" id="result">0.00</span>
+            </div>        
+    </div>
+</div>
+</body>
+</html>
