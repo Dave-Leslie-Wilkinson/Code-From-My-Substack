@@ -85,5 +85,25 @@ margin-bottom: 25px}
             </div>        
     </div>
 </div>
+<script>
+
+function calculateAnswer() {
+    var xone = document.getElementById("xone").value;
+    total = (xone * 1.19303) -3.89578;
+    total = Math.round(total * 100)/100;
+    total = total.toFixed(2);
+    
+    document.getElementById("resultdiv").style.display = "block";
+    document.getElementById("resultheading").style.display = "block";
+    document.getElementById("result").innerHTML = total;
+    
+}
+
+document.getElementById("resultdiv").style.display = "none";
+document.getElementById("resultheading").style.display = "none";
+
+document.getElementById("calculate").onclick = function(){calculateAnswer()};
+
+</script>    
 </body>
 </html>
