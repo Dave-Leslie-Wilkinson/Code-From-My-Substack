@@ -1,0 +1,3 @@
+data()
+head(ToothGrowth, n = 10)
+tooth_grow_data <- ToothGrow
